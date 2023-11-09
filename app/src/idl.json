@@ -1,0 +1,76 @@
+{
+    "version": "0.1.0",
+    "name": "business_app",
+    "instructions": [
+      {
+        "name": "createBusiness",
+        "accounts": [
+          {
+            "name": "business",
+            "isMut": true,
+            "isSigner": true
+          },
+          {
+            "name": "user",
+            "isMut": true,
+            "isSigner": true
+          },
+          {
+            "name": "systemProgram",
+            "isMut": false,
+            "isSigner": false
+          }
+        ],
+        "args": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "businessType",
+            "type": "string"
+          },
+          {
+            "name": "address",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "name": "getBusiness",
+        "accounts": [
+          {
+            "name": "business",
+            "isMut": false,
+            "isSigner": false
+          }
+        ],
+        "args": []
+      }
+    ],
+    "accounts": [
+      {
+        "name": "Business",
+        "type": {
+          "kind": "struct",
+          "fields": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "businessType",
+              "type": "string"
+            },
+            {
+              "name": "address",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    ],
+    "metadata": {
+      "address": "2cE9Naq1VKCKTt2DvYoLfR1U6jS5tBpa8PFckbj8aB3p"
+    }
+  }
